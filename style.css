@@ -1,0 +1,96 @@
+/* configuraciones de generales */
+*{
+    box-sizing: border-box;
+}
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;/* TODO centrar mas facil? */
+}
+h1{
+    font-family: 'Fraunces', serif;
+    margin: 0;
+}
+p{
+    display: inline;
+    font-size: 13px; 
+    margin: 0;
+    color: hsl(228, 12%, 48%);
+}
+#main-container{ /* al contenido de la pag despues de los 1440px sera margen */
+    height: 92%;
+    width: 92%;
+    background-color: white;
+    border-radius: 10px;
+}
+#lore-container{
+    height: 60%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#descripcion{
+    line-height: 167%;
+    font-size: 14px;
+}
+#precios-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#precio1{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+#precio2{
+    text-decoration:line-through;
+    margin-left: 20px;
+}
+button{
+    font-size: 15px;
+    font-weight: 700;
+    height: 47px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+}
+button:hover{
+    background-color: rgb(32, 91, 58);
+}
+svg{
+    position: relative;
+    top: 0.125em;
+    margin-right: 7px;
+}
+
+#img-container{
+    height: 40%;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+@media (min-width: 800px){
+    .container{ /* al contenido de la pag despues de los 1440px sera margen */
+        max-width: 1440px;
+        margin: auto;
+    }
+}
