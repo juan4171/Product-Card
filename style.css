@@ -2,9 +2,6 @@
 *{
     box-sizing: border-box;
 }
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
-
 html{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -16,30 +13,42 @@ body{
     background-color: hsl(30, 38%, 92%);
     display: flex;
     align-items: center;
-    justify-content: center;/* TODO centrar mas facil? */
+    justify-content: center;
 }
-h1{
-    font-family: 'Fraunces', serif;
-    margin: 0;
-}
-p{
-    display: inline;
-    font-size: 13px; 
-    margin: 0;
-    color: hsl(228, 12%, 48%);
-}
-#main-container{ /* al contenido de la pag despues de los 1440px sera margen */
+#main-container{ 
     height: 92%;
     width: 92%;
     background-color: white;
     border-radius: 10px;
 }
+/* configuro los 2 contenedores principales */
+#img-container{
+    background-image:url(images/image-product-mobile.jpg);
+       background-size: cover;
+       background-position: center center;
+       height: 39%;
+       width: 100%;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+}
 #lore-container{
-    height: 60%;
-    padding: 25px;
+    height: 61%;
+    padding: 23px 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+p{
+    margin: 0;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px; 
+}
+#producto{
+    letter-spacing: 4px;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    margin: 0;
 }
 #descripcion{
     line-height: 167%;
@@ -77,20 +86,43 @@ svg{
     margin-right: 7px;
 }
 
-#img-container{
-    height: 40%;
-}
-img{
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-@media (min-width: 800px){
-    .container{ /* al contenido de la pag despues de los 1440px sera margen */
-        max-width: 1440px;
-        margin: auto;
+@media (min-width: 725px){
+    #main-container{
+        max-width: 780px;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* configuro los 2 contenedores principales */
+    #img-container{
+        background-image:url(images/image-product-desktop.jpg);
+        height: 100%;
+        width: 51%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    #lore-container{
+        height: 100%;
+        padding: 38px 42px;
+        width: 49%;
+    }
+    p{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 2.5em;
+        line-height: 99%
+    }
+    #descripcion{
+        font-size: 17px;
+    }
+    #precio1{
+        font-size: 2.6rem;
+    }
+    button{
+        font-size: 17px;
+        height: 3.3em;
     }
 }
