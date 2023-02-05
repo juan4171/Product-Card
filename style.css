@@ -15,21 +15,23 @@ body{
     align-items: center;
     justify-content: center;
 }
-#main-container{ 
+main{ 
     height: 92%;
     width: 92%;
     background-color: white;
     border-radius: 10px;
 }
 /* configuro los 2 contenedores principales */
-#img-container{
-    background-image:url(images/image-product-mobile.jpg);
-       background-size: cover;
-       background-position: center center;
-       height: 39%;
-       width: 100%;
-       border-top-left-radius: 10px;
-       border-top-right-radius: 10px;
+picture {
+    display: flex;
+    width: 100%;
+    height: 39%;
+}
+.product__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 #lore-container{
     height: 61%;
@@ -45,6 +47,7 @@ p{
 }
 #producto{
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 h1{
     font-family: 'Fraunces', serif;
@@ -76,6 +79,7 @@ button{
     border-style: none;
     color: white;
     background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
 }
 button:hover{
     background-color: rgb(32, 91, 58);
@@ -87,7 +91,7 @@ svg{
 }
 
 @media (min-width: 725px){
-    #main-container{
+    main{
         max-width: 780px;
         height: 70%;
         display: flex;
@@ -95,13 +99,15 @@ svg{
         align-items: center;
     }
     /* configuro los 2 contenedores principales */
-    #img-container{
-        background-image:url(images/image-product-desktop.jpg);
+    picture {
+        margin: 0;
+        width: 50%;
         height: 100%;
-        width: 51%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
+    }
+    .product__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
     }
     #lore-container{
         height: 100%;
