@@ -33,7 +33,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-/* configuro los 2 contenedores principales */
+/* configuro los 2 contenedores de imagen e info */
 picture{
     display: flex;
     max-height: 40%;
@@ -95,7 +95,7 @@ button{
 button:hover{
     background-color: rgb(32, 91, 58);
 }
-svg{
+button img{
     position: relative;
     top: 0.12em;
     margin-right: 7px;
