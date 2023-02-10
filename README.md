@@ -20,7 +20,7 @@ Users should be able to:
 
 ## Screenshot
 
-![](images/Captura%20de%20pantalla%202023-02-04%20001345.png)
+![](images/CapturaPantallaFm.png)
 
 ## Author
 
