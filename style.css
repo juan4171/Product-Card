@@ -7,8 +7,10 @@
 html{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    font-size: 62.5%; /* 1rem = 10px */
 }
 body{
+    font-size: 1.6rem;
     background-color: hsl(30, 38%, 92%);
 }
 main{
@@ -54,18 +56,19 @@ p{
     color: hsl(228, 12%, 48%);
 }
 #producto{
-    font-size: 12.5px;
-    letter-spacing: 4px;
+    font-size: 1.25rem;
+    letter-spacing: 0.4rem;
     text-transform: uppercase;
 }
 h1{
     font-family: 'Fraunces', serif;
     margin: 0;
     line-height: 100%;
+    font-size: 3.2rem;
 }
 #descripcion{
     line-height: 164%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 #precios-container{
     display: flex;
@@ -74,16 +77,16 @@ h1{
 }
 #precio1{
     font-family: 'Fraunces', serif;
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: hsl(158, 36%, 37%);
 }
 #precio2{
     text-decoration:line-through;
     margin-left: 20px;
-    font-size: 13px; 
+    font-size: 1.3rem; 
 }
 button{
-    font-size: 14.5px;
+    font-size: 1.45rem;
     font-weight: 700;
     height: 49px;
     border-radius: 8px;
@@ -97,7 +100,7 @@ button:hover{
 }
 button img{
     position: relative;
-    top: 0.12em;
+    top: 1.5px;
     margin-right: 7px;
 }
 
