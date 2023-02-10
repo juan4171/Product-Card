@@ -40,12 +40,12 @@ picture{
     display: flex;
     max-height: 40%;
 }
-.product__image {
+.product-img {
     width: 100%;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
-#lore-container {
+.lore-container {
     padding: 25px;
     height: 100%;
     display: flex;
@@ -55,7 +55,7 @@ picture{
 p{
     color: hsl(228, 12%, 48%);
 }
-#producto{
+.producto{
     font-size: 1.25rem;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
@@ -66,22 +66,22 @@ h1{
     line-height: 100%;
     font-size: 3.2rem;
 }
-#descripcion{
+.descripcion{
     line-height: 164%;
     font-size: 1.4rem;
 }
-#precios-container{
+.precios-container{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#precio1{
+.precio{
     font-family: 'Fraunces', serif;
     font-size: 3.2rem;
     color: hsl(158, 36%, 37%);
 }
-#precio2{
-    text-decoration:line-through;
+.precio-viejo{
+    /* text-decoration:line-through; */
     margin-left: 20px;
     font-size: 1.3rem; 
 }
@@ -89,7 +89,7 @@ button{
     font-size: 1.45rem;
     font-weight: 700;
     height: 49px;
-    border-radius: 8px;
+    border-radius: 10px;
     border-style: none;
     color: white;
     background-color: hsl(158, 36%, 37%);
@@ -118,10 +118,10 @@ button img{
         margin: 0;
         max-height: max-content;
     }
-    .product__image {
+    .product-img {
         border-radius: 10px 0 0 10px;
     }
-    #lore-container{
+    .lore-container{
         padding: 32px 32px;
     }
 }
