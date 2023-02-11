@@ -56,7 +56,7 @@ p{
     color: hsl(228, 12%, 48%);
 }
 .producto{
-    font-size: 1.15rem;
+    font-size: 1.17rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
 }
@@ -86,10 +86,10 @@ h1{
     font-size: 1.3rem; 
 }
 button{
-    font-size: 1.35rem;
+    font-size: 1.32rem;
     font-weight: 700;
-    height: 49px;
-    border-radius: 6px;
+    height: 48px;
+    border-radius: 7px;
     border-style: none;
     color: white;
     background-color: hsl(158, 36%, 37%);
