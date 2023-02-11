@@ -56,7 +56,7 @@ p{
     color: hsl(228, 12%, 48%);
 }
 .producto{
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
 }
@@ -64,7 +64,7 @@ h1{
     font-family: 'Fraunces', serif;
     margin: 0;
     line-height: 100%;
-    font-size: 3.15rem;
+    font-size: 3.2rem;
 }
 .descripcion{
     line-height: 164%;
@@ -86,10 +86,10 @@ h1{
     font-size: 1.3rem; 
 }
 button{
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
     height: 49px;
-    border-radius: 8px;
+    border-radius: 6px;
     border-style: none;
     color: white;
     background-color: hsl(158, 36%, 37%);
